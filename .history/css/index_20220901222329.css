@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cards{
+    display: flex;
+    margin-left: -30px;
+
+}
+
+.card{
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2)0  7px 29px 0;
+    width: calc(25% - 30px);
+    margin-left: 30px;
+}
+.card-image{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    /* flex-shrink: 0; */
+}
+.card-top{
+    padding: 25px;
+}
+.card-title{
+    font-weight: 500;
+    margin-bottom: 25px;
+    /* FIX LỖI VIẾT DÍNH TIÊU ĐỀ */
+    word-break: break-all;
+}
+.card-user{
+    display: flex;
+    align-items: center;
+}
+.card-user-avata{
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    flex-shrink: 0;
+    object-fit: cover;
+
+}
+.card-user-info{
+    padding-left: 20px;
+    flex: 1;
+}
+.card-user-top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.card-user-top ion-icon{
+    color: #20e3b2;
+    margin-left: 5px;
+}
+.card-user-name{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+}
+.card-user-game{
+    color: #999;
+    font-weight: 300;
+    font-size: 13px;
+}
+.card-bottom{
+    padding: 25px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.card-live{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: #ff6651;
+}
+.card-live span{
+    padding-left: 10px;
+    font-size: 14px;
+}
+.card-watching{
+    font-size: 300;
+    color: #999;
+    font-weight: 300;
+}
+/* FIX LOI PHA GIAO DIEN */
+.card-content{
+    /* height: calc(100% - 200px); */
+    /* Lấy hết khoảng trống cho content */
+    flex: 1;
+    /* Đẩy bottom luôn ở dưới */
+    display: flex;
+    flex-direction: column;
+}
+.card-bottom,
+.card-user{
+    /* Đẩy bottom luôn ở dưới */
+    margin-top: auto;
+    flex-shrink: 0;
+}
+.card{
+    /* Lấy hết khoảng trống cho content */
+    display: flex;
+    flex-direction: column;
+}
+/* Đẩy user xuống cuối card-top */
+.card-top{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

@@ -1,0 +1,50 @@
+.cards{
+    display: flex;
+    margin-left: -30px;
+
+}
+
+.card{
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2)0  7px 29px 0;
+    width: calc(25% - 30px);
+    margin-left: 30px;
+}
+.card-image{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.card-content{
+    padding: 25px;
+}
+.card-title{
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.card-user{
+    display: flex;
+    align-items: center;
+}
+.card-user-avata{
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.card-user-info{
+    padding-left: 20px;
+    flex: 1;
+}
+.card-user-top{
+
+}
+.card-user-name{
+
+}
+.card-user-game{
+
+}
