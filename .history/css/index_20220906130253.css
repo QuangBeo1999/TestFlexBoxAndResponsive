@@ -135,20 +135,16 @@ body{
     flex: 1;
 }
 
-@media screen and (max-width: 1280px) {
-    .cards{
-        --colums: 3;
-    }
-}
-@media screen and (max-width: 1080px) {
-    .cards{
-        --colums: 2;
-    }
-}
-
 @media screen and (max-width: 767.98px) {
     .cards{
+        --spacing:25px;
         --colums: 1;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .cards{
+        --spacing:25px;
+        --colums: 3;
     }
 }
 
